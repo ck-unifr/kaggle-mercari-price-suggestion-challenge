@@ -246,10 +246,10 @@ preds = np.exp(preds)-1
 submission = test[["test_id"]]
 submission["price"] = preds
 
-submission.to_csv("./myNNsubmission.csv", index=False)
+submission.to_csv('sample_submission.csv', index=False)
 submission.price.hist()
 
-sub.to_csv('sample_submission.csv', index=False)
+
 
 
 
